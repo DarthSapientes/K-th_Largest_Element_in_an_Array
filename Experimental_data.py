@@ -3,7 +3,7 @@ import time
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
-sys.setrecursionlimit(10**5)
+sys.setrecursionlimit(10**5) #in order to sidestep the RecursionError caused due to Python’s default recursion limit being 1000
 
 #------------------------------
 # Quickselect implementation
@@ -81,4 +81,5 @@ plt.title("Runtime of Quickselect under Different Input Conditions")
 plt.legend()
 plt.grid(True)
 plt.show()
+
 
