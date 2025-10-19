@@ -1,1 +1,1 @@
-# K-th_Largest_Element_in-_Array
+# K-th_Largest_Element_in_an_Array
