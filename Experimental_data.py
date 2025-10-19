@@ -57,7 +57,7 @@ for n in Ns:
         t_near += time.perf_counter() - start
 
         # Case 3: Random array
-        A_rand = [random.randint(1, 10 ** 6) for _ in range(n)]
+        A_rand = [random.randint(1, 10 ** 5) for _ in range(n)]
         start = time.perf_counter()
         quickselect(A_rand.copy(), k)
         t_rand += time.perf_counter() - start
@@ -81,3 +81,4 @@ plt.title("Runtime of Quickselect under Different Input Conditions")
 plt.legend()
 plt.grid(True)
 plt.show()
+
