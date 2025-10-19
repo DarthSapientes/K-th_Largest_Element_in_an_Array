@@ -22,7 +22,7 @@ def quickselect(A, k = int):
     else:
         return quickselect(right, ((k - len(left)) - 1))
 
-def randomized_quickselect(A, k = int): # A variation of the quickselect algorithm with randomized pivot selection
+def randomized_quickselect(A, k = int): 
     if len(A) == 1:
         return A[0]
 
@@ -110,4 +110,5 @@ plt.ylabel("Runtime (seconds)")
 plt.title("Empirical Quadratic Bound on Quickselect Worst-Case Runtime")
 plt.legend()
 plt.grid(True)
+
 plt.show()
