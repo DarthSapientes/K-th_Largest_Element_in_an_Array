@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import gc
 import sys
-sys.setrecursionlimit(10**5)
+sys.setrecursionlimit(10**5) #in order to sidestep the RecursionError caused due to Python’s default recursion limit being 1000
 
 # -------------------------
 # Implementations
@@ -148,4 +148,5 @@ for scenario in k_scenarios:
     plt.xscale('log')
     plt.yscale('log')
     plt.grid(True, which='both', ls='--', alpha=0.5)
+
     plt.show()
